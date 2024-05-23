@@ -1,0 +1,12 @@
+package:
+  name: automech-toolbox
+  version: "2024.5.23"
+
+source:
+  path: .
+
+build:
+  noarch: generic
+  script:
+    - mkdir -p ${PREFIX}/bin
+    - cp ${RECIPE_DIR}/../bin/* ${PREFIX}/bin/.

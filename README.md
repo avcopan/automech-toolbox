@@ -1,6 +1,6 @@
 # automech-toolbox
 
-This repository contains source code and build scripts for static exeuctables
+This repository contains source code and build scripts for static executables
 used by AutoMech.
 It also contains a recipe for a conda package that places these executables in a
 user's bin.

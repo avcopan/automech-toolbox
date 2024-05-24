@@ -1,6 +1,6 @@
 package:
   name: automech-toolbox
-  version: "2024.5.23"
+  version: "2024.5.24"
 
 source:
   path: .
@@ -9,4 +9,6 @@ build:
   noarch: generic
   script:
     - mkdir -p ${PREFIX}/bin
-    - cp ${RECIPE_DIR}/../bin/* ${PREFIX}/bin/.
+    - mkdir -p ${PREFIX}/share
+    - cp ${RECIPE_DIR}/../static/bin/* ${PREFIX}/bin/.
+    - cp ${RECIPE_DIR}/../static/share/* ${PREFIX}/bin/.

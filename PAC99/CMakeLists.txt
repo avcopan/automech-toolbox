@@ -1,0 +1,10 @@
+project(PAC99 Fortran)
+cmake_minimum_required(VERSION 2.8)
+
+set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+set(BUILD_SHARED_LIBS OFF)
+set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgfortran")
+
+add_executable(pac99 ${PROJECT_SOURCE_DIR}/src/pac99.f)
+
+install(TARGETS pac99 DESTINATION bin)
